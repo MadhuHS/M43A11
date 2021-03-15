@@ -1,1 +1,44 @@
-Note of Access_Specifiers
+Packages
+
+A java package is group of classes and interfaces which are related to one single module in the given project.
+
+Package naming convention
+
+package name is always written in all-lowercase.
+
+package names are always written in reverse order of domain
+
+ convention 1
+  domain.appname.modulename
+  com.gmail.inbox  
+
+  convention 2
+  domain.companyname.appname.modulename
+  com.google.gmail.inbox
+  
+Data members and function members of a class present in 
+different package can be accessed by two ways
+
+Using fully qualified class names 
+Using import statement
+
+A class name which is written with its package 
+name is called as fully qualified class name.
+
+-------------------------------------------------------------------
+
+public :   
+if you declare any entity as public, then it can be accessed by the classes present in same  or different package.
+ public entities will have highest visibility and lowest security. 
+         
+protected : 
+If you declare any entity as protected, then it can be accessed by the classes present in same package.
+protected entity can be accessed by other class present in different package through inheritance and creating the object of SUBCLASS ONLY.
+
+pkg-level(default) :
+if you declare any entity without using any access specifier keyword then it is considered as pkg-level member(default member).
+if you declare any entity as pkg-level(default), then it can be STRCITLY accessed ONLY by the classes present in SAME package.
+
+private : 
+if you declare any entity as private, then it can be accesses ONLY by the class within which they are declared.
+private entities will have highest security and lowest visibility. 
