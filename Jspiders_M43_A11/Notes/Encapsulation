@@ -1,0 +1,21 @@
+
+
+
+* Encapsulation is achieved declaring data members as private 
+  and grant the access through getter and setter methods.
+  
+* Encapsulation is used to provide security for data members
+  against the invalid values.
+
+* getter method returns the current value of the data member
+
+* return type of getter method depends on the data type
+  of the data member who's value will be returned 
+  
+* setter method updates the value of the data member.
+
+* return type of setter method will be usually void because
+  it does'nt return any value.
+
+  
+
