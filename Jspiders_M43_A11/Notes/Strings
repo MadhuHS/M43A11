@@ -1,0 +1,100 @@
+* String value is group of chars written within double quotes
+
+* In java String is a class which is used to store group of
+  chars as the String object.
+  
+* String class is immediate sub-class of Object class
+
+* String class implements Serializable, Comparable<String>, CharSequence interfaces
+
+* String class is final and it cannot be inherited.
+
+* hashCode() of Object class is overriden in String class
+  which returns an integer value that is generated based on
+  unicode values of every character present in given String
+  
+* toString() of Object class is overriden in String class
+  which returns the string value present in given string
+  object.
+  
+* equals() of Object class is overriden in String class
+  which compares characters present in given 2 strings
+  and returns true if they are same else returns false
+  
+* String objects are created in special memory 
+  area called string pool in heap areaa
+  
+* The String pool consist of two parts 
+  1.Constant pool
+  2.Non-constant pool
+  
+* String objects can be created in 2 diff ways
+  1. By using new operator
+  2. Without using new operator
+  
+* If you create a String object without using new operator 
+  then the object will be created in Constant pool.
+  
+* If you create a String object by using new operator then the object will be 
+  created in non-constant pool.
+  
+ Note : == operator compares address of given two Objects.
+ 
+ * Within constant pool duplicates are not allowed.
+ 
+ * Within non-constant pool duplicates are allowed. 
+ 
+ * If you create any string object in following format then the resultant string object
+   will be created in non-constant pool.
+   
+   "" + Svar
+   Svar + ""
+   Svar + Svar
+   
+ String class is immutable. Explain ****
+              or
+ Why String objects are immutable
+ 
+ If you try to re-intialize a string object then,
+ a new object will be created with the new value
+ & the reference variable starts pointing to new object
+ leaving old object de-referenced.
+ 
+ Advantage : If 2 ref. variables are pointing same string object
+             then changes done on the object through one reference
+             variable will not effect another reference variable. 
+ 
+ Disadvantage : If you reintialize same reference variable for n number
+                of times then it will result in creation of multiple
+                de-referenced objects which will occupy the memory space
+                and may lead to OutofMemoryError.
+                
+To overcome the disadvantage of immutable property java developers 
+created two new classes
+1. StringBuffer
+2. StringBuilder  
+  
+  
+  
+                
+                
+                
+              
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+  
+  
+  
+  
+  
+  
+    
+  
