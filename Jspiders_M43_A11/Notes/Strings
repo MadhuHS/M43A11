@@ -22,7 +22,7 @@
   and returns true if they are same else returns false
   
 * String objects are created in special memory 
-  area called string pool in heap areaa
+  area called string pool in heap area
   
 * The String pool consist of two parts 
   1.Constant pool
@@ -72,29 +72,4 @@
 To overcome the disadvantage of immutable property java developers 
 created two new classes
 1. StringBuffer
-2. StringBuilder  
-  
-  
-  
-                
-                
-                
-              
- 
- 
- 
- 
- 
- 
- 
- 
-   
-   
-  
-  
-  
-  
-  
-  
-    
-  
+2. StringBuilder
