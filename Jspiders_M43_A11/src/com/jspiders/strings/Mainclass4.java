@@ -134,6 +134,70 @@ public class Mainclass4 {
         System.out.println("spl char  : "+spl);
 	}
 	
+	
+	public static boolean test6(String pwd)
+	{
+		if(pwd.length() < 8)
+		{
+			return false;
+		}
+		
+		int up = 0;
+		int num = 0;
+		int spl = 0;
+		for(int i=0; i<= pwd.length()-1; i++)
+		{
+			int ascii = pwd.charAt(i);
+			
+			if((ascii >= 65 && ascii <= 90))
+			{
+			  up++;	
+			}
+			else if((ascii >= 48 && ascii <= 57))
+			{
+				num++;
+			}
+			else if((ascii >= 32 && ascii <= 47) ||
+					(ascii >= 58 && ascii <= 64) ||
+					(ascii >= 91 && ascii <= 96) ||
+					(ascii >= 123 && ascii <= 127))
+			{
+				spl++;
+			}
+			
+		}
+		
+		if(up >= 1 && spl >=2 && num >=1)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	
+	public static int countYZ(String str) 
+	{
+		 int count = 0;
+			
+			for(int i=0; i<= str.length()-1; i++)
+			{
+			
+			if(str.charAt(i) == 'y' || str.charAt(i) == 'Y' ||
+					str.charAt(i) == 'z' ||str.charAt(i) == 'Z')
+			{
+				System.out.println(str.charAt(i));
+			   if(i < str.length()-1 && str.charAt(i+1) == ' ')
+			   {
+				   count++;
+			   }
+			}
+			}
+			return count;
+    }
+	
 	public static void main(String[] args) 
 	{
        /*System.out.println(test1("hello"));
@@ -157,10 +221,18 @@ public class Mainclass4 {
        System.out.println(catDog("catcat"));
        System.out.println(catDog("cat"));
        System.out.println(catDog("dogcat"));
-       System.out.println(catDog("1cat1cadodog"));*/
+       System.out.println(catDog("1cat1cadodog"));
 		
 		
 	   test5("abc@123");
+	   System.out.println(test6("abba"));
+	   System.out.println(test6("a123@ABC"));
+	   System.out.println(test6("a23@!abc"));
+	   System.out.println(test6("A@@!ABCD"));
+	   System.out.println(test6("AB@1234!"));*/
+	   
+	   
+	   System.out.println(countYZ("fez day")); 
        
 	}
 }
