@@ -44,13 +44,21 @@ Exception Handling
  Exception e2 = new ArrayIndexOutOfBoundsException(); 
   
   
-  Generalized try-catch block
+ Generalized try-catch block
+  
+printStackTrace() : this is method prints 3 information about the exception  
+  - Name of the exception 
+  - Reason for the exception
+  - Complete stack Trace
   
   
  finally block
  
- * finally block is executed irrespective of occurance of exceptions.
+ * finally block is executed irrespective of occurence of exceptions.
  * finally block should be written after the catch block.
+ 
+ try-catch-finally
+ try-finally
   
   Exception are of 2 types
 
@@ -78,6 +86,8 @@ Exception Handling
   
   * throws keyword is used to propagate checked exceptions explicitly
     by the programmer.
+  * If a method throws ANY exception its a best developer practice
+    to declare throws keyword with the Exception Class Name
   
   throw keyword
 
@@ -85,14 +95,4 @@ Exception Handling
     programmer according to the application requirements.
   
   
-  
-  
-  
-  
-  
- 
-
-
-
-
-
+  https://dev.mysql.com/downloads/installer/
