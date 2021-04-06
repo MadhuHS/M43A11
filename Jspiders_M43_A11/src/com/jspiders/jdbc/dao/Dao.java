@@ -6,10 +6,11 @@ public interface Dao
 {
    public void initDB()throws SQLException;
    
-   public void insert(String insertQuery);
-   public void update(String updateQuery);
+   public void insert(int id,String name)throws SQLException ;
+   public void update(int id,String name)throws SQLException;
    public void delete(String deleteQuery);
-   public void select(String selectQuery);
+   public void select()throws SQLException ;
+   public void selectUser(int id)throws SQLException ;
    
    public void closeDB()throws SQLException;
 }
