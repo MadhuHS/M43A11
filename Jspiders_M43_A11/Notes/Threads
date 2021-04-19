@@ -151,31 +151,18 @@ Threads and MultiThreading
       - The executor terminates, also resulting in task cancellation. 
       - An execution of the task throws an exception. 
 
-    
-     scheduleAtFixedDelay(task, initialDelay, delay, unit)
-    
-    - Submits a periodic action that becomes enabled first after the
-      given initial delay, and subsequently with the given delay
-      between the termination of one execution and the commencement of 
-      the next. 
-
-     The sequence of task executions continues indefinitely until one of the following exceptional completions occur: 
-      - The task is explicitly cancelled via the returned future. 
-      - The executor terminates, also resulting in task cancellation. 
-      - An execution of the task throws an exception.
-    
-    
+      
     Single thread executor
-    * A Thread pool that uses a single worker thread operating off an unbounded queue. 
+    * A Thread pool that uses a 
+      single worker thread operating off an unbounded queue. 
   
-    * If this single thread terminates due to a failure during execution prior to shutdown,
+    * If this single thread terminates due to a failure during
+      execution prior to shutdown,
       a new one will take its place if needed to execute remaining tasks.
       
     * Tasks are guaranteed to execute sequentially, and no more than one task will be active at 
       any given time. 
-    
-    * Unlike the otherwise equivalent newFixedThreadPool(1) the returned executor is 
-      guaranteed not to be reconfigurable to use additional threads.
+  
  
     RACE CONDITION
     
@@ -231,10 +218,12 @@ Threads and MultiThreading
        of each other to complete the execution and wait for infinite period
        of time.
        
-     * Thread DeadLock can be overcome by using Inter Thread Communication(ITC)  
+     * Thread DeadLock can be overcome by using 
+       Inter Thread Communication(ITC)  
        
        
-       Inter Thread Communication(ITC) is achieved by using methods of Object class
+       Inter Thread Communication(ITC) is achieved
+        by using methods of Object class
        
        wait()
        notify()
@@ -249,14 +238,3 @@ Threads and MultiThreading
      notifyAll() : It will send the notification to all threads which are in wait state
                    to resume its execution.
         
-       
-       
-       
-       
-       
-       
- 
- 
- 
- 
- 
